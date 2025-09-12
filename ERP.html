@@ -1,62 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ERP Sales & Inventory Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ERP Business Analytics Demo | Mohammed Tariq</title>
+  <style>
+    body {margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f4f6f9;color:#333}
+    header {background:#007acc;color:#fff;padding:2rem;text-align:center}
+    .container {max-width:960px;margin:0 auto;padding:2rem}
+    section {margin-bottom:2.5rem}
+    h1,h2,h3 {color:#007acc}
+    p {line-height:1.6}
+    .screenshot {margin:1.5rem 0;text-align:center}
+    .screenshot img {max-width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+    .btn {
+      display:inline-block;
+      margin-top:1rem;
+      padding:12px 22px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+      border:0;
+      line-height:1;
+      transition:all .15s ease-in-out;
+    }
+    .btn-primary {
+      background:#007acc;
+      color:#fff !important;
+      box-shadow:0 2px 0 rgba(0,0,0,.08);
+    }
+    .btn-primary:hover {background:#005f99;color:#fff !important;text-decoration:none}
+    footer {background:#e0e0e0;text-align:center;padding:1rem;margin-top:2rem}
+    footer a {color:#007acc;font-weight:600;text-decoration:none}
+    footer a:hover {text-decoration:underline}
+  </style>
 </head>
 <body>
-  <header>
-    <h1>ERP Sales & Inventory Dashboard</h1>
-  </header>
 
-  <main>
-    <section>
-      <h2>Project Overview</h2>
-      <p>
-        This project demonstrates how ERP system data (Odoo) can be connected to a PostgreSQL database 
-        and visualized in <strong>Power BI</strong>. The dashboard provides insights into total sales, 
-        purchases, inventory stock, and profit trends, helping businesses make data-driven decisions.
-      </p>
-    </section>
+<header>
+  <h1>ERP Business Analytics Demo</h1>
+  <p>Integrating Odoo ERP with PostgreSQL and Power BI</p>
+</header>
 
-    <section>
-      <h2>Tools & Technologies</h2>
-      <ul>
-        <li>Odoo ERP (data export)</li>
-        <li>PostgreSQL (database backend)</li>
-        <li>SQL (data queries & cleaning)</li>
-        <li>Power BI (data visualization)</li>
-      </ul>
-    </section>
+<div class="container">
 
-    <section>
-      <h2>Dashboard Preview</h2>
-      <img src="images/dashboard.png" alt="ERP Dashboard Screenshot" style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-    </section>
+  <section>
+    <h2>Project Overview</h2>
+    <p>
+      This project demonstrates an <strong>ERP data pipeline</strong> using <strong>Odoo ERP</strong> as the source system, 
+      <strong>PostgreSQL</strong> for structured data storage, and <strong>Power BI</strong> for reporting.  
+      It simulates a real-world Applications Analyst workflow, including ERP transactions, SQL queries, 
+      and BI dashboards.
+    </p>
+  </section>
 
-    <section>
-      <h2>Key Features</h2>
-      <ul>
-        <li>Total Sales and Purchases KPIs</li>
-        <li>Stock versus Reserved Inventory Analysis</li>
-        <li>Sales, Purchases, and Profit Trend Over Time</li>
-        <li>Data pipeline from ERP → SQL → Power BI</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li>Configured <strong>Odoo ERP modules</strong> for Sales, Purchases, and Inventory management.</li>
+      <li>Captured transactions (orders, vendors, products, employees) in ERP.</li>
+      <li>Connected Odoo’s PostgreSQL backend directly in Power BI.</li>
+      <li>Created <strong>DAX measures</strong> for Sales, Purchases, and Profit.</li>
+      <li>Designed an interactive dashboard with KPIs, cards, and trend charts.</li>
+      <li>Performed a sample <strong>ERP security audit</strong> (user roles, permissions, and database access).</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Repository</h2>
-      <p>
-        You can view the full project on GitHub here:  
-        <a href="https://github.com/YOUR-USERNAME/erp-dashboard" target="_blank">ERP Dashboard Repository</a>
-      </p>
-    </section>
+  <section>
+    <h2>Technology Stack</h2>
+    <ul>
+      <li><strong>ERP System:</strong> Odoo 16 (Docker)</li>
+      <li><strong>Database:</strong> PostgreSQL</li>
+      <li><strong>Visualization:</strong> Power BI</li>
+      <li><strong>SQL Tools:</strong> pgAdmin, DBeaver</li>
+      <li><strong>Languages:</strong> SQL, DAX</li>
+    </ul>
+  </section>
 
-    <footer>
-      <a href="index.html">Back to Portfolio</a>
-    </footer>
-  </main>
+  <section>
+    <h2>Screenshots</h2>
+    <div class="screenshot">
+      <img src="dashboard.png" alt="ERP Power BI Dashboard"/>
+      <p><em>Final ERP Business Analytics Dashboard in Power BI</em></p>
+    </div>
+    <div class="screenshot">
+      <img src="odoo1.png" alt="Odoo ERP Example"/>
+      <p><em>Odoo ERP Sales Order Entry</em></p>
+    </div>
+    <div class="screenshot">
+      <img src="sql1.png" alt="SQL Query Example"/>
+      <p><em>SQL Query against ERP PostgreSQL backend</em></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Results</h2>
+    <p>
+      This demo highlights how ERP data can be transformed into actionable insights for business users. 
+      The dashboard provides visibility into sales, purchases, profit, and trends, enabling data-driven 
+      decision-making while also covering <strong>ERP system support and audits</strong>.
+    </p>
+  </section>
+
+  <a class="btn btn-primary" href="index.html">← Back to Portfolio</a>
+
+</div>
+
+<footer>
+  &copy; 2025 Mohammed Tariq ·
+  <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
+  <a href="https://github.com/MTariq2023" target="_blank">GitHub</a>
+</footer>
+
 </body>
 </html>
