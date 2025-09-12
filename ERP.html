@@ -3,132 +3,112 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ERP Business Analytics Demo | Mohammed Tariq</title>
+  <title>ERP Business Analytics Demo</title>
   <style>
-    body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f4f6f9;color:#333}
-    header{background:#007acc;color:#fff;padding:2rem;text-align:center}
-    .container{max-width:960px;margin:0 auto;padding:2rem}
-    h1,h2{color:#007acc}
-    .screenshot{margin-bottom:2rem}
-    .screenshot img{width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-    .screenshot p{margin-top:.5rem;font-style:italic;color:#444}
-    a{color:#007acc;text-decoration:none;font-weight:600}
-    a:hover{text-decoration:underline}
-    footer{background:#e0e0e0;text-align:center;padding:1rem;margin-top:3rem}
+    body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; background:#f9fafc; color:#333; line-height:1.6 }
+    header { background:#007acc; color:#fff; padding:2rem; text-align:center }
+    .container { max-width:960px; margin:0 auto; padding:2rem }
+    h1, h2 { color:#007acc }
+    img { max-width:100%; border-radius:6px; margin:1rem 0; border:1px solid #ddd; }
+    .screenshot { margin-bottom:2rem }
+    footer { background:#eee; padding:1rem; text-align:center; margin-top:3rem }
   </style>
 </head>
 <body>
 
 <header>
   <h1>ERP Business Analytics Demo</h1>
-  <p>Integrating ERP Transactions with SQL + Power BI Dashboard</p>
+  <p>ERP Data Integration · PostgreSQL · SQL · Power BI</p>
 </header>
 
 <div class="container">
 
-  <section>
-    <h2>Overview</h2>
-    <p>
-      This demo project showcases how I set up a sample <strong>ERP system (Odoo)</strong>, 
-      generated sales and purchase transactions, extracted data from the backend 
-      <strong>PostgreSQL database</strong> using SQL, and then visualized business KPIs in 
-      <strong>Power BI</strong>. The project highlights end-to-end ERP data integration, 
-      transformation, and analytics.
-    </p>
-  </section>
+  <h2>Overview</h2>
+  <p>
+    This demo project showcases how I set up a sample <strong>ERP system (Odoo)</strong>, 
+    generated sales and purchase transactions, extracted data from the backend 
+    <strong>PostgreSQL database</strong> using SQL, and then visualized KPIs in <strong>Power BI</strong>. 
+    The project highlights end-to-end ERP data integration, transformation, and analytics.
+  </p>
 
-  <section>
-    <h2>Walkthrough</h2>
+  <h2>Walkthrough</h2>
 
-    <div class="screenshot">
-      <img src="odoo1.png" alt="ERP Dashboard"/>
-      <p>1. Odoo ERP dashboard after installation and module configuration.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo1.png" alt="ERP Dashboard"/>
+    <p><em>1. Odoo ERP dashboard after installation and module configuration.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo2.png" alt="ERP Customers"/>
-      <p>2. Created sample customers and vendors in ERP to simulate business transactions.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo2.png" alt="ERP Customers"/>
+    <p><em>2. Created sample customers and vendors in ERP to simulate business transactions.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo3.png" alt="ERP Products"/>
-      <p>3. Configured demo products with categories for sales and purchases.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo3.png" alt="ERP Products"/>
+    <p><em>3. Configured demo products with categories for sales and purchases.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo4.png" alt="ERP Sales Order"/>
-      <p>4. Captured a new sales order for Customer A with multiple products.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo4.png" alt="ERP Sales Order"/>
+    <p><em>4. Captured a new sales order for Customer A with multiple products.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo5.png" alt="ERP Purchase Order"/>
-      <p>5. Logged vendor purchases to simulate supply chain activity.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo5.png" alt="ERP Purchase Order"/>
+    <p><em>5. Logged vendor purchases to simulate supply chain activity.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo6.png" alt="ERP Employees"/>
-      <p>6. Defined employees and roles for access/security demo.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo6.png" alt="ERP Employees"/>
+    <p><em>6. Defined employees and roles for access/security demo.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo7.png" alt="ERP Workflow"/>
-      <p>7. Tracked order processing through ERP workflow states.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo7.png" alt="ERP Workflow"/>
+    <p><em>7. Tracked order processing through ERP workflow states.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo8.png" alt="ERP Invoices"/>
-      <p>8. Generated invoices for sales orders and confirmed payments.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo8.png" alt="ERP Invoices"/>
+    <p><em>8. Generated invoices for completed sales orders.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo9.png" alt="ERP Inventory"/>
-      <p>9. Inventory module reflecting product stock after sales/purchases.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo9.png" alt="ERP Reports"/>
+    <p><em>9. Ran ERP reports to validate transaction history and balances.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="odoo10.png" alt="ERP Reports"/>
-      <p>10. ERP built-in reports summarizing orders and balances.</p>
-    </div>
+  <div class="screenshot">
+    <img src="odoo10.png" alt="ERP Modules"/>
+    <p><em>10. Demonstrated additional ERP modules for extended functionality.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="sql1.png" alt="PostgreSQL Query"/>
-      <p>11. Queried ERP PostgreSQL backend in pgAdmin to extract order data.</p>
-    </div>
+  <div class="screenshot">
+    <img src="sql1.png" alt="SQL Query 1"/>
+    <p><em>11. Extracted raw transaction data from PostgreSQL using SQL queries.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="sql2.png" alt="PostgreSQL Query 2"/>
-      <p>12. Additional SQL queries to validate ERP transactions and totals.</p>
-    </div>
+  <div class="screenshot">
+    <img src="sql2.png" alt="SQL Query 2"/>
+    <p><em>12. Cleaned and joined sales and purchase tables for analysis.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="sql3.png" alt="Power BI Data Model"/>
-      <p>13. Connected ERP PostgreSQL database to Power BI and built relationships.</p>
-    </div>
+  <div class="screenshot">
+    <img src="sql3.png" alt="SQL Query 3"/>
+    <p><em>13. Built summary views to feed into BI dashboards.</em></p>
+  </div>
 
-    <div class="screenshot">
-      <img src="sql4.png" alt="Power BI Dashboard"/>
-      <p>14. Final ERP Business Analytics Dashboard with KPIs, sales vs. purchases, and profit trends.</p>
-    </div>
-
-  </section>
-
-  <section>
-    <h2>Key Skills Demonstrated</h2>
-    <ul>
-      <li>ERP setup & configuration (Odoo)</li>
-      <li>SQL queries and data extraction from PostgreSQL</li>
-      <li>Data transformation for BI tools</li>
-      <li>Power BI dashboard design (cards, bar charts, trend lines)</li>
-      <li>Business KPIs: sales, purchases, inventory, profit</li>
-    </ul>
-  </section>
+  <div class="screenshot">
+    <img src="sql4.png" alt="Power BI Dashboard"/>
+    <p><em>14. Power BI dashboard with KPIs: Sales, Purchases, Stock, and Profit trends.</em></p>
+  </div>
 
 </div>
 
 <footer>
-  &copy; 2025 Mohammed Tariq ·
-  <a href="index.html">Back to Portfolio</a>
+  &copy; 2025 Mohammed Tariq
 </footer>
 
 </body>
 </html>
+
