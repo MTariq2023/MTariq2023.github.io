@@ -5,111 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ERP Business Analytics Demo | Mohammed Tariq</title>
   <style>
-    body {margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f4f6f9;color:#333}
-    header {background:#007acc;color:#fff;padding:2rem;text-align:center}
-    .container {max-width:960px;margin:0 auto;padding:2rem}
-    section {margin-bottom:2.5rem}
-    h1,h2,h3 {color:#007acc}
-    p {line-height:1.6}
-    .screenshot {margin:1.5rem 0;text-align:center}
-    .screenshot img {max-width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
-    .btn {
-      display:inline-block;
-      margin-top:1rem;
-      padding:12px 22px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:700;
-      border:0;
-      line-height:1;
-      transition:all .15s ease-in-out;
-    }
-    .btn-primary {
-      background:#007acc;
-      color:#fff !important;
-      box-shadow:0 2px 0 rgba(0,0,0,.08);
-    }
-    .btn-primary:hover {background:#005f99;color:#fff !important;text-decoration:none}
-    footer {background:#e0e0e0;text-align:center;padding:1rem;margin-top:2rem}
-    footer a {color:#007acc;font-weight:600;text-decoration:none}
-    footer a:hover {text-decoration:underline}
+    body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f4f6f9;color:#333}
+    header{background:#007acc;color:#fff;padding:2rem;text-align:center}
+    .container{max-width:960px;margin:0 auto;padding:2rem}
+    h1,h2{color:#007acc}
+    .screenshot{margin-bottom:2rem}
+    .screenshot img{width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    .screenshot p{margin-top:.5rem;font-style:italic;color:#444}
+    a{color:#007acc;text-decoration:none;font-weight:600}
+    a:hover{text-decoration:underline}
+    footer{background:#e0e0e0;text-align:center;padding:1rem;margin-top:3rem}
   </style>
 </head>
 <body>
 
 <header>
   <h1>ERP Business Analytics Demo</h1>
-  <p>Integrating Odoo ERP with PostgreSQL and Power BI</p>
+  <p>Integrating ERP Transactions with SQL + Power BI Dashboard</p>
 </header>
 
 <div class="container">
 
   <section>
-    <h2>Project Overview</h2>
+    <h2>Overview</h2>
     <p>
-      This project demonstrates an <strong>ERP data pipeline</strong> using <strong>Odoo ERP</strong> as the source system, 
-      <strong>PostgreSQL</strong> for structured data storage, and <strong>Power BI</strong> for reporting.  
-      It simulates a real-world Applications Analyst workflow, including ERP transactions, SQL queries, 
-      and BI dashboards.
+      This demo project showcases how I set up a sample <strong>ERP system (Odoo)</strong>, 
+      generated sales and purchase transactions, extracted data from the backend 
+      <strong>PostgreSQL database</strong> using SQL, and then visualized business KPIs in 
+      <strong>Power BI</strong>. The project highlights end-to-end ERP data integration, 
+      transformation, and analytics.
     </p>
   </section>
 
   <section>
-    <h2>Key Features</h2>
+    <h2>Walkthrough</h2>
+
+    <div class="screenshot">
+      <img src="odoo1.png" alt="ERP Dashboard"/>
+      <p>1. Odoo ERP dashboard after installation and module configuration.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo2.png" alt="ERP Customers"/>
+      <p>2. Created sample customers and vendors in ERP to simulate business transactions.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo3.png" alt="ERP Products"/>
+      <p>3. Configured demo products with categories for sales and purchases.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo4.png" alt="ERP Sales Order"/>
+      <p>4. Captured a new sales order for Customer A with multiple products.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo5.png" alt="ERP Purchase Order"/>
+      <p>5. Logged vendor purchases to simulate supply chain activity.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo6.png" alt="ERP Employees"/>
+      <p>6. Defined employees and roles for access/security demo.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo7.png" alt="ERP Workflow"/>
+      <p>7. Tracked order processing through ERP workflow states.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo8.png" alt="ERP Invoices"/>
+      <p>8. Generated invoices for sales orders and confirmed payments.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo9.png" alt="ERP Inventory"/>
+      <p>9. Inventory module reflecting product stock after sales/purchases.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="odoo10.png" alt="ERP Reports"/>
+      <p>10. ERP built-in reports summarizing orders and balances.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="sql1.png" alt="PostgreSQL Query"/>
+      <p>11. Queried ERP PostgreSQL backend in pgAdmin to extract order data.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="sql2.png" alt="PostgreSQL Query 2"/>
+      <p>12. Additional SQL queries to validate ERP transactions and totals.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="sql3.png" alt="Power BI Data Model"/>
+      <p>13. Connected ERP PostgreSQL database to Power BI and built relationships.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="sql4.png" alt="Power BI Dashboard"/>
+      <p>14. Final ERP Business Analytics Dashboard with KPIs, sales vs. purchases, and profit trends.</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Key Skills Demonstrated</h2>
     <ul>
-      <li>Configured <strong>Odoo ERP modules</strong> for Sales, Purchases, and Inventory management.</li>
-      <li>Captured transactions (orders, vendors, products, employees) in ERP.</li>
-      <li>Connected Odoo’s PostgreSQL backend directly in Power BI.</li>
-      <li>Created <strong>DAX measures</strong> for Sales, Purchases, and Profit.</li>
-      <li>Designed an interactive dashboard with KPIs, cards, and trend charts.</li>
-      <li>Performed a sample <strong>ERP security audit</strong> (user roles, permissions, and database access).</li>
+      <li>ERP setup & configuration (Odoo)</li>
+      <li>SQL queries and data extraction from PostgreSQL</li>
+      <li>Data transformation for BI tools</li>
+      <li>Power BI dashboard design (cards, bar charts, trend lines)</li>
+      <li>Business KPIs: sales, purchases, inventory, profit</li>
     </ul>
   </section>
-
-  <section>
-    <h2>Technology Stack</h2>
-    <ul>
-      <li><strong>ERP System:</strong> Odoo 16 (Docker)</li>
-      <li><strong>Database:</strong> PostgreSQL</li>
-      <li><strong>Visualization:</strong> Power BI</li>
-      <li><strong>SQL Tools:</strong> pgAdmin, DBeaver</li>
-      <li><strong>Languages:</strong> SQL, DAX</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Screenshots</h2>
-    <div class="screenshot">
-      <img src="dashboard.png" alt="ERP Power BI Dashboard"/>
-      <p><em>Final ERP Business Analytics Dashboard in Power BI</em></p>
-    </div>
-    <div class="screenshot">
-      <img src="odoo1.png" alt="Odoo ERP Example"/>
-      <p><em>Odoo ERP Sales Order Entry</em></p>
-    </div>
-    <div class="screenshot">
-      <img src="sql1.png" alt="SQL Query Example"/>
-      <p><em>SQL Query against ERP PostgreSQL backend</em></p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Results</h2>
-    <p>
-      This demo highlights how ERP data can be transformed into actionable insights for business users. 
-      The dashboard provides visibility into sales, purchases, profit, and trends, enabling data-driven 
-      decision-making while also covering <strong>ERP system support and audits</strong>.
-    </p>
-  </section>
-
-  <a class="btn btn-primary" href="index.html">← Back to Portfolio</a>
 
 </div>
 
 <footer>
   &copy; 2025 Mohammed Tariq ·
-  <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
-  <a href="https://github.com/MTariq2023" target="_blank">GitHub</a>
+  <a href="index.html">Back to Portfolio</a>
 </footer>
 
 </body>
