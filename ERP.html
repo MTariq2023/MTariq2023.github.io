@@ -5,142 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ERP Business Analytics Demo</title>
   <style>
-    body {margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f4f6f9;color:#333}
-    header {background:#007acc;color:#fff;padding:2rem;text-align:center}
-    .container {max-width:960px;margin:0 auto;padding:2rem}
-    h1,h2 {color:#007acc}
-    .screenshot {margin-bottom:2rem}
-    .screenshot img {max-width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-    .screenshot p {font-style:italic;margin-top:0.5rem}
-
-    /* Buttons */
-    .btn {
-      display:inline-block;
-      margin:1rem 0.5rem 0 0;
-      padding:12px 22px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:700;
-      border:0;
-      line-height:1;
-      transition:all .15s ease-in-out;
-    }
-    .btn-primary {
-      background:#007acc;
-      color:#fff !important;
-    }
-    .btn-primary:hover {background:#005f99;color:#fff !important;text-decoration:none}
-    .btn-secondary {
-      background:#e0e0e0;
-      color:#333 !important;
-    }
-    .btn-secondary:hover {background:#c7c7c7;color:#000 !important;text-decoration:none}
-
-    footer {background:#e0e0e0;text-align:center;padding:1rem;margin-top:2rem}
-    footer a{color:#007acc;font-weight:600;text-decoration:none}
-    footer a:hover{text-decoration:underline}
+    body{margin:0;font-family:'Segoe UI',Tahoma,sans-serif;background:#f4f6f9;color:#333}
+    header{background:#007acc;color:#fff;padding:2rem;text-align:center}
+    .container{max-width:960px;margin:0 auto;padding:2rem}
+    h1,h2{color:#007acc}
+    img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:1rem 0}
+    .caption{font-size:.9rem;font-style:italic;margin-bottom:2rem;color:#555}
+    .btn{display:inline-block;padding:10px 20px;margin:10px 5px;border-radius:8px;
+         text-decoration:none;font-weight:600}
+    .btn-primary{background:#007acc;color:#fff}
+    .btn-primary:hover{background:#005f99}
+    footer{text-align:center;padding:1rem;background:#e0e0e0}
   </style>
 </head>
 <body>
 
 <header>
   <h1>ERP Business Analytics Demo</h1>
-  <p>ERP setup (Odoo) → SQL Data Extraction (PostgreSQL) → Power BI Dashboard</p>
+  <p>Odoo ERP · PostgreSQL · Power BI</p>
 </header>
 
 <div class="container">
 
   <h2>Overview</h2>
   <p>
-    This demo project showcases how I set up a sample <strong>ERP system (Odoo)</strong>,
-    generated sales and purchase transactions, extracted data from the backend
-    <strong>PostgreSQL database</strong> using SQL, and then visualized business KPIs in
-    <strong>Power BI</strong>. The project highlights end-to-end ERP data integration,
-    transformation, and analytics.
+    This demo project showcases how I set up a sample <strong>ERP system (Odoo)</strong>, generated sales and purchase 
+    transactions, extracted data from the backend <strong>PostgreSQL database</strong> using SQL, and then visualized 
+    business KPIs in <strong>Power BI</strong>.  
+    The project highlights end-to-end ERP data integration, transformation, and analytics.
   </p>
 
   <h2>Walkthrough</h2>
 
-  <div class="screenshot">
-    <img src="images/odoo1.png" alt="ERP Dashboard"/>
-    <p>1. Odoo ERP dashboard after installation and module configuration.</p>
-  </div>
+  <img src="images/odoo1.png" alt="ERP Dashboard"/>
+  <div class="caption">1. Odoo ERP dashboard after installation and module configuration.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo2.png" alt="ERP Customers"/>
-    <p>2. Created sample customers and vendors in ERP to simulate business transactions.</p>
-  </div>
+  <img src="images/odoo2.png" alt="ERP Customers"/>
+  <div class="caption">2. Created sample customers and vendors in ERP to simulate business transactions.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo3.png" alt="ERP Products"/>
-    <p>3. Configured demo products with categories for sales and purchases.</p>
-  </div>
+  <img src="images/odoo3.png" alt="ERP Employees"/>
+  <div class="caption">3. Configured demo employees and departments for access/security setup.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo4.png" alt="ERP Sales Order"/>
-    <p>4. Captured a new sales order for Customer A with multiple products.</p>
-  </div>
+  <img src="images/odoo4.png" alt="ERP Products"/>
+  <div class="caption">4. Added demo products with categories for sales and purchases.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo5.png" alt="ERP Purchase Order"/>
-    <p>5. Logged vendor purchases to simulate supply chain activity.</p>
-  </div>
+  <img src="images/odoo5.png" alt="ERP Sales Orders"/>
+  <div class="caption">5. Captured customer sales orders with multiple products.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo6.png" alt="ERP Employees"/>
-    <p>6. Defined employees and roles for access/security demo.</p>
-  </div>
+  <img src="images/odoo6.png" alt="ERP Purchase Orders"/>
+  <div class="caption">6. Logged vendor purchases to simulate supply chain activity.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo7.png" alt="ERP Workflow"/>
-    <p>7. Tracked order processing through ERP workflow states.</p>
-  </div>
+  <img src="images/odoo7.png" alt="ERP Workflow"/>
+  <div class="caption">7. Tracked order processing through ERP workflow states.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo8.png" alt="ERP Invoices"/>
-    <p>8. Generated invoices for recorded sales transactions.</p>
-  </div>
+  <img src="images/odoo8.png" alt="ERP Invoices"/>
+  <div class="caption">8. Generated invoices for recorded sales transactions.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo9.png" alt="ERP Reports"/>
-    <p>9. Ran ERP reports to validate order and purchase summaries.</p>
-  </div>
+  <img src="images/odoo9.png" alt="ERP Reports"/>
+  <div class="caption">9. Ran ERP sales analysis reports to validate orders and revenue trends.</div>
 
-  <div class="screenshot">
-    <img src="images/odoo10.png" alt="ERP Additional Module"/>
-    <p>10. Used additional ERP module functionality (custom module/configuration demo).</p>
-  </div>
+  <img src="images/odoo10.png" alt="ERP Users"/>
+  <div class="caption">10. Managed ERP users and roles for security and module demo.</div>
 
-  <div class="screenshot">
-    <img src="images/sql1.png" alt="SQL Query 1"/>
-    <p>11. Extracted raw transaction data from PostgreSQL using SQL queries.</p>
-  </div>
+  <img src="images/sql1.png" alt="SQL Query Customers"/>
+  <div class="caption">11. Extracted raw customer data from PostgreSQL using SQL queries.</div>
 
-  <div class="screenshot">
-    <img src="images/sql2.png" alt="SQL Query 2"/>
-    <p>12. Cleaned and joined sales and purchase tables for analysis.</p>
-  </div>
+  <img src="images/sql2.png" alt="SQL Query Sales"/>
+  <div class="caption">12. Cleaned and joined sales orders with customers for analysis.</div>
 
-  <div class="screenshot">
-    <img src="images/sql3.png" alt="SQL Data Prep"/>
-    <p>13. Verified clean and structured output ready for Power BI import.</p>
-  </div>
+  <img src="images/sql3.png" alt="SQL Query Purchases"/>
+  <div class="caption">13. Verified purchase order data structured and ready for Power BI import.</div>
 
-  <div class="screenshot">
-    <img src="images/dashboard.png" alt="Power BI Dashboard"/>
-    <p>14. Final Power BI dashboard showing total sales, purchases, stock, and profit trends.</p>
-  </div>
+  <img src="images/dashboard.png" alt="Power BI Dashboard"/>
+  <div class="caption">14. Final Power BI dashboard showing total sales, purchases, stock, and profit trends.</div>
 
-  <a class="btn btn-secondary" href="index.html">← Back to Portfolio</a>
-  <a class="btn btn-primary" href="https://github.com/MTariq2023/ERP-Business-Analytics-Demo" target="_blank">View on GitHub</a>
+  <p>
+    <a href="index.html" class="btn btn-primary">← Back to Portfolio</a>
+    <a href="https://github.com/MTariq2023/ERP-Business-Analytics-Demo" target="_blank" class="btn btn-primary">View on GitHub →</a>
+  </p>
 
 </div>
 
 <footer>
-  &copy; 2025 Mohammed Tariq ·
-  <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
-  <a href="https://github.com/MTariq2023" target="_blank">GitHub</a>
+  &copy; 2025 Mohammed Tariq
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
